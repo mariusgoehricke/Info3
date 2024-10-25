@@ -31,8 +31,28 @@ auto main(int argc, char **argv) -> int
      * More info at https://fmt.dev/latest/api.html
      */
     fmt::print("Hello, {}!\n", app.get_name());
-    fmt::print("Die eingegebene Anzahl ist:{}",count);
+    fmt::print("Die eingegebene Anzahl ist:{}\n",count);
     /* INSERT YOUR CODE HERE */
+    std::vector<unsigned int> vec1 (count);
 
+    for (int i = 0; i < count; ++i) {
+        vec1[i] = std::rand() % 50;  // Zufallszahlen zwischen 0 und 99
+        std::cout << vec1[i] << std::endl;
+    }
+
+
+    std::cout << "Vector aufsteigend sortiert:" << std::endl;
+    for (int i : vec1){
+        std::sort(vec1.begin(), vec1.end());
+        std::cout << i << " ";
+    }
+
+    std::cout << std::endl;
+
+    std::cout << "Vector absteigend sortiert:" << std::endl;
+    for (int j : vec1){
+        std::sort(vec1.end(), vec1.begin(), std::greater<int>());
+        std::cout << j << " ";
+    }
     return 0; /* exit gracefully*/
 }

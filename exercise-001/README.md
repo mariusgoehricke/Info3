@@ -14,7 +14,7 @@ Erstellen Sie anschließend einen Commit und pushen diesen.
 
 ## Zeig es mir Baby
 
-Damit Sie den Zufall kenne, müssen Sie ihn ausgeben können. Verwenden Sie hierzu die ``{fmt}`` Bibliothek und erstellen Sie eine Funktion, um den Vektor auszugeben.
+Damit Sie den Zufall kennen, müssen Sie ihn ausgeben können. Verwenden Sie hierzu die ``{fmt}`` Bibliothek und erstellen Sie eine Funktion, um den Vektor auszugeben.
 
 Erstellen Sie anschließend einen Commit und pushen diesen.
 
